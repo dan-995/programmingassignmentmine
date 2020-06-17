@@ -28,7 +28,7 @@ cacheSolve <- function(x, ...) {
           return(c)
         }
         req_mat <- x$get()
-        c <- solve(req_mat)
+        c <- solve(req_mat,...)
         x$setinv(c)
         c
 }
